@@ -42,8 +42,7 @@ def get_page():
     return random.choice(pages)
 
 # Create a Kinesis Firehose client
-session = boto3.Session(region_name='us-east-1')
-firehose = session.client('firehose')
+firehose = boto3.client('firehose', region_name='us-east-1')
 
 for _ in range(RECORDS):
     delay = random.randint(0, MAX_SECONDS_BETWEEN_EVENTS)
