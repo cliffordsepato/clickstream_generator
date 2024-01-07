@@ -1,4 +1,4 @@
-# Generating Clickstream events data using Python
+# Generate E-Commerce Clickstream Data Using Python
 
 ### Use Case
 You're a data engineer, responsible for designing, building, and maintaining the data infrastructure that supports your organization’s data-driven initiatives. 
