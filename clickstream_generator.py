@@ -74,9 +74,9 @@ for _ in range(RECORDS):
 
     # Upload the event to S3
     object_name = f"{get_event_id()}.json"
-    s3.put_object(Bucket='my-clickstream-bucket', Key=object_name, Body=event_json)
+    s3.put_object(Bucket='my-clickstream-data-bucket', Key=object_name, Body=event_json)
 
     # Print a message to indicate that the event was uploaded to S3
-    print(f"Uploaded event {object_name} to S3 bucket my-clickstream-bucket")
+    print(f"Uploaded event {object_name} to S3 bucket my-clickstream-data-bucket")
 
 
