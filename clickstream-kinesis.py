@@ -73,4 +73,4 @@ for _ in range(RECORDS):
         }
     )
 
-    print(response["ResponseMetadata"]["HTTPStausCode"])
+    print(response["ResponseMetadata"]["HTTPStatusCode"])
