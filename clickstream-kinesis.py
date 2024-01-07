@@ -67,7 +67,7 @@ for _ in range(RECORDS):
 
     # Put the event to Kinesis Firehose
     response = firehose.put_record(
-        DeliveryStreamName='my-delivery-stream',
+        DeliveryStreamName='PUT-S3-eprrk',
         Record={
             'Data': encoded_data
         }
