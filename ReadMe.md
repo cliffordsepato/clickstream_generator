@@ -3,15 +3,29 @@ This project generates clickstream data and saves it to an AWS S3 bucket.
 
 To run the Python script, you will need the following prerequisites:
 
-* An EC2 instance running a Windows or Linux machine.
+* An EC2 instance running a Linux machine.
 * An IAM role that has permissions to write data to the S3 bucket.
 * An IAM policy that grants write access to the S3 bucket.
 
 ### Installation
-To install the required packages, run:
+Connect to the EC2 instance and install these packages using the `yum` package manager:
 
+
+#### Update the package list
 ```
-pip install -r requirements.txt
+sudo yum update -y
+```
+### Install Python
+```
+sudo yum install python3 -y
+```
+### Install pip
+```
+sudo yum install python3-pip -y
+```
+### Install boto3
+```
+sudo pip3 install boto3
 ```
 
 ### Usage
